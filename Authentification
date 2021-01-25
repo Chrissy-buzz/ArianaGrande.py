@@ -1,11 +1,17 @@
-# Your Account SID from twilio.com/console
-
+#Authentification from Twilio
 account_sid = "Please access with your account_sid"
 # Your Auth Token from twilio.com/console
 auth_token  = "Please access with your auth_token"
 
 client = Client(account_sid, auth_token)
 
-
+#Authentification for Tweepy
 auth = tweepy.OAuthHandler("KGGTMeLRi8ruRi3ZOkZv5h59I", "hCdXoXrEmacwDPSNEZxFY5cSoWfhp9dTUGzuOrmfF0NVAEsU0t")
 auth.set_access_token("1352178353655193602-7Mj69IHTeQ6JPHIcMGlii4bd71jchD", "DCKN4xt0j1sCgJRDrmct5WmJ6gxiB1VHrgDf8XosJ0w4s")
+
+# DEBUG Verify Twitter Credentials
+#try:
+#    api.verify_credentials()
+#    print("Authentication OK")
+#except:
+#    print("Error during authentication")
