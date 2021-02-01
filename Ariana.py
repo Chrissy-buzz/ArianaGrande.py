@@ -13,7 +13,7 @@ client = Client(account_sid, auth_token)
 auth = tweepy.OAuthHandler("KGGTMeLRi8ruRi3ZOkZv5h59I", "hCdXoXrEmacwDPSNEZxFY5cSoWfhp9dTUGzuOrmfF0NVAEsU0t")
 auth.set_access_token("1352178353655193602-7Mj69IHTeQ6JPHIcMGlii4bd71jchD", "DCKN4xt0j1sCgJRDrmct5WmJ6gxiB1VHrgDf8XosJ0w4s")
 
-# DEBUG Verify Twitter Credentials
+# DEBUG To Verify Twitter Credentials
 #try:
 #    api.verify_credentials()
 #    print("Authentication OK")
@@ -63,8 +63,8 @@ class MyStreamListener(tweepy.StreamListener):
             else:
                 print("❣")
             print("🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍")
-            #message = client.messages.create(to="+1yournumber", from_ ="+1twilionumber", body = txt)
-            #print(message)
+            message = client.messages.create(to="+1yournumber", from_ ="+1twilionumber", body = txt)
+            print(message)
             following = status.user.friends_count
             followers = status.user.followers_count
             totaltweets = status.user.statuses_count
