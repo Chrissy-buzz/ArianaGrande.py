@@ -10,8 +10,8 @@ auth_token  = "Please access with your auth_token"
 client = Client(account_sid, auth_token)
 
 #Authentification for Tweepy
-auth = tweepy.OAuthHandler("KGGTMeLRi8ruRi3ZOkZv5h59I", "hCdXoXrEmacwDPSNEZxFY5cSoWfhp9dTUGzuOrmfF0NVAEsU0t")
-auth.set_access_token("1352178353655193602-7Mj69IHTeQ6JPHIcMGlii4bd71jchD", "DCKN4xt0j1sCgJRDrmct5WmJ6gxiB1VHrgDf8XosJ0w4s")
+auth = tweepy.OAuthHandler("Please access with your account_sid", "Please access with your account_sid")
+auth.set_access_token("Please access with your auth_token", "Please access with your auth_token")
 
 # DEBUG To Verify Twitter Credentials
 #try:
